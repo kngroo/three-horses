@@ -12,15 +12,17 @@ export default function Home() {
       >
         <source src="/moto.mp4" type="video/mp4" />
       </video>
-      <main className="relative uppercase flex flex-col items-center justify-center w-full h-full [text-shadow:_1px_1px_0_rgb(0_0_0_/_100%)]">
-        <h1>Three Horses</h1>
-        <p className="text-3xl">Pouring Soon</p>
-        <h2 className="text-sm mt-1">Cafe & Speed Shop</h2>
-        <h3 className="text-sm">1250 Dupont St Toronto</h3>
+      <main className="whitespace-nowrap relative uppercase flex flex-col items-center justify-center w-full [text-shadow:_1px_1px_0_rgb(0_0_0_/_100%)] select-none top-1/4 sm:h-full sm:top-0">
+        <h1 className="text-2xl sm:text-3xl">Three Horses</h1>
+        <p className="text-4xl sm:text-5xl">Pouring Soon</p>
+        <h2 className="text-lg sm:text-xl mt-1">Cafe & Speed Shop</h2>
+        <h3 className="text-lg sm:text-xl">
+          <a href="https://maps.app.goo.gl/rM8onc3vVnmvAodc9" target="_blank">
+            1250 Dupont St Toronto
+          </a>
+        </h3>
+        <Instagram className="inline-block mt-10 drop-shadow-lg" />
       </main>
-      <footer className="absolute bottom-0 w-full text-center">
-        <Instagram className="inline-block m-2" />
-      </footer>
     </>
   );
 }

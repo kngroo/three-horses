@@ -1,6 +1,10 @@
 export default function Instagram({ className }: { className?: string }) {
   return (
-    <a href="https://www.instagram.com/thr33.hors3s/" className={className}>
+    <a
+      href="https://www.instagram.com/thr33.hors3s/"
+      className={className}
+      target="_blank"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
