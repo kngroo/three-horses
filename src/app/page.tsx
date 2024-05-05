@@ -1,17 +1,25 @@
-import Image from "next/image";
+import Instagram from "./instagram";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-24 bg-white">
-      <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-        src="/three-horses-logo.png"
-        alt="Three Horses Logo"
-        width={180}
-        height={37}
-        priority
-      />
-      <h1>Pouring soon...</h1>
-    </main>
+    <>
+      <video
+        autoPlay
+        muted
+        loop
+        className="fixed min-h-full min-w-full right-1/2 top-0 max-w-none translate-x-1/2"
+      >
+        <source src="/moto.mp4" type="video/mp4" />
+      </video>
+      <main className="relative uppercase flex flex-col items-center justify-center w-full h-full [text-shadow:_1px_1px_0_rgb(0_0_0_/_100%)]">
+        <h1>Three Horses</h1>
+        <p className="text-3xl">Pouring Soon</p>
+        <h2 className="text-sm mt-1">Cafe & Speed Shop</h2>
+        <h3 className="text-sm">1250 Dupont St Toronto</h3>
+      </main>
+      <footer className="absolute bottom-0 w-full text-center">
+        <Instagram className="inline-block m-2" />
+      </footer>
+    </>
   );
 }
