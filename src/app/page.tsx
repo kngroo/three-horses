@@ -7,6 +7,7 @@ export default function Home() {
         autoPlay
         muted
         loop
+        playsInline
         className="fixed min-h-full min-w-full right-1/2 top-0 max-w-none translate-x-1/2"
       >
         <source src="/moto.mp4" type="video/mp4" />
